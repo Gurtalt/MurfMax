@@ -38,6 +38,7 @@ h2 {
 }
 
 .nav {
+
     background-color: #d8ebf3;
     padding: 15px;
     margin: -7;
@@ -45,41 +46,32 @@ h2 {
 
 }
 
+
+nav a {
+    font-size: 20px;
+    font-family: 'Times New Roman';
+    color: var(--border-colour3);
+    text-decoration: none;
+    padding: 25px;
+    font-weight: 600
+}
+
 .navlogo {
     height: 30px;
-    ;
     mix-blend-mode: multiply;
 }
 
-.navtext {
-    font-family: "Lato", sans-serif;
-    font-weight: 600;
-    text-align: center;
-
-}
-
 .footer {
-
     background-color: #d8ebf3;
-
     padding: 15px 30px;
-
     min-height: 70px;
-
     min-width: 100vw;
-
     position: relative;
-
     display: flex;
-
     align-items: center;
-
     font-family: 'Times New Roman';
-
     color: var(--border-colour3);
-
     box-sizing: border-box;
-
     justify-content: space-between;
 
 
