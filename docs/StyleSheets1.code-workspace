@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "StyleSheets"
+		},
+		{
+			"path": "Media"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "StyleSheets"
+	}
+}
