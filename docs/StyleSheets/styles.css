@@ -1,0 +1,551 @@
+/* CSS - MurfMax Newhaven Heritage website*/
+/* Global CSS Variables for the website */
+
+:root {
+    --fg-colour: #d8ebf3;
+    --accent-colour2: #6d8ba5;
+    --border-colour3: #004369;
+    --bg-colour: #dcd060;
+}
+
+
+/* Body of the website (applies to all pages) */
+body {
+    background-color: var(--border-colour3);
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+/* Line at the start of each page */
+hr {
+    position: relative;
+    z-index: 10;
+    margin-top: -170px;
+    margin-bottom: 80px;
+    background-color: var(--accent-colour2);
+}
+/* Paragraph text*/
+p {
+    color: var(--fg-colour);
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    padding: 20px;
+}
+/* H1 for the header of the pages*/
+h1 {
+    display: flow;
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--bg-colour);
+}
+/* H2 for the header of the pages*/
+h2 {
+    display: flow;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 40px;
+    padding-left: 33px;}
+
+img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+    
+button {
+    font-family: var(--font-main);
+    font-size: 22px;
+    font-weight: 600;
+    padding: 0.6rem 1.8rem;
+    border-radius: 20px;
+    border: 2px solid var(--border-colour3);
+    background-color: var(--fg-colour);
+    color: var(--border-colour3);
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+button:hover{
+    background-color:var(--bg-colour);
+    color: var(--border-colour3);
+    transform: scale(1.3);
+    transition: all 0.7s ease;
+}
+button.active{
+    background-color: var(--bg-colour);
+    color: var(--border-colour3);
+    transform: scale(1.2);
+    transition: all 0.7s ease;
+}
+
+hr {
+    display: flex;
+    position: relative;
+    margin: 20px;
+    padding: 1px;
+    background-color: var(--bg-colour);
+}
+
+/* Hero Section for the homepage */
+.hero {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+/*Main media section for the pages*/
+
+.main-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-section div {
+    width: 90%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.main-section img {
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+}
+
+.main-section p {
+    width: 30%;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--fg-colour);
+}
+
+
+
+
+/*  header of the pages*/
+.header {
+    display: flow;
+    position: absolute;
+    padding-top: 130px;
+    padding-left: 505px;
+    color: var(--border-colour3);}
+
+
+
+/* Navigation bar for the website (applies to all pages)*/
+nav {
+    display: flex;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #d8ebf3;
+    text-align: center;
+    margin: 0;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+nav a {
+    font-size: 1.3rem;
+    font-family: "Playfair Display", serif;
+    color: var(--border-colour3);
+    text-decoration: none;
+    padding: 25px;
+    font-weight: 300;
+    align-self: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+nav a:hover {
+    height: 45px;
+    mix-blend-mode: multiply;
+}
+
+nav .navlogo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+/* Footer */
+ .footer {
+    background-color: #d8ebf3;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--border-colour3);
+}
+
+.footer p {
+    margin: 0;
+    font-weight: 600;
+    font-family: 'Times New Roman';
+    color: var(--border-colour3);
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.footerimg img {
+    width: 40px;
+    height: 40px;
+    transition: transform .2s ease;
+}
+
+.footerimg img:hover {
+    transform: scale(1.15);
+}
+
+
+/* Info Section Container for the info section at the end of each page */
+.info-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding: 4rem 1rem;
+}
+
+.info-card {
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.info-card img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 80px;
+}
+
+.info-card p{
+    line-height: 1.7;
+    
+}
+
+
+
+/* Event Header */
+.event_header {
+    min-width: 100%;
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    color: var(--bg-colour);
+    padding-top: 10px;
+}
+
+/* Event Section */
+.events_section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70vh;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.events_section p {
+    width: 40%;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--fg-colour);
+}
+
+.events_section img {
+    width: 40%;
+    height: auto;
+}
+
+
+/* Event Image */
+.eventimg {
+    position: relative;
+    width: 1000px;
+    height: 430px;
+    padding-right: 50px;
+    margin-bottom: 20px;
+    z-index: 10;
+}
+
+
+/* LINKS PAGE  */
+
+.header_links {
+    display: grid;
+    font-family: "Playfair Display", serif;
+    font-size: 50px;
+    font-weight: 600;
+    padding-top: 30px;
+    font-display: var(--bg-colour);
+    padding: 1px;
+}
+
+/* CONTACT SECTION PAGE */
+.contact-section {
+    position: relative;
+    width: 100%;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+/* Main Container */
+.contact-container {
+    max-width: 1200px;
+    margin: auto;
+    background-color: #004369;
+    border: 3px solid var(--bg-colour);
+    display: flex;
+    gap: 40px;
+    padding: 50px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* Form Side */
+/* SECTION */
+.contact-section {
+    width: 100%;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 10;
+}
+
+/* MAIN CONTAINER */
+.contact-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px;
+    display: flex;
+    gap: 40px;
+    background: #004369;
+    border: 3px solid var(--bg-colour);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* FORM SIDE */
+.contact-form-side { flex: 1; }
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* FORM GROUPS */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label,
+.info-block h3,
+.office-info {
+    font-family: 'Times New Roman';
+    color: var(--bg-colour);
+    font-weight: 600;
+}
+
+.form-group label { font-size: 32px; margin-bottom: 10px; }
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 18px 20px;
+    font-size: 18px;
+    background: var(--fg-colour);
+    color: var(--border-colour3);
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    min-height: 180px;
+    resize: vertical;
+    border-radius: 25px;
+}
+
+
+
+/* INFO SIDE */
+.contact-info-side {
+    flex: 1;
+    padding-left: 40px;
+    border-left: 3px solid var(--bg-colour);
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.info-block h3 { font-size: 28px; margin-bottom: 8px; }
+
+.info-block p {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+    word-break: break-word;
+}
+
+.office-info {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 22px;
+    padding: 0 20px;
+}
+
+/* LINKS Page */
+.links_page {
+    position: relative;
+    padding: 60px;
+    font-family: "Playfair Display", serif;
+    color: white;
+    text-align: center; 
+}
+
+/* Each link block */
+.link_item {
+    margin: 40px auto;
+    max-width: 700px; 
+}
+
+ */
+.link_item h3 a {
+    color: #ffdd55;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    border-bottom: 3px solid #ffdd55;
+    padding-bottom: 8px;
+    font-size: 26px;}
+
+/* Description text */
+.link_item p {
+    margin-top: 12px;
+    font-size: 18px;
+    line-height: 1.4;
+}
+ 
+
+/* Read More Buttons and content to read*/      
+
+#readMoreButtons{
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    flex-direction: row;
+}
+#contentContainer{
+    margin-top: 5vw;
+    width: 80%;
+    min-height: 40vh;
+    background-color: var(--fg-colour);
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    border-radius: 20px;
+    
+}
+#contentToChange{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bold;
+    color: var(--border-colour3);
+}
+
+/* Swiper Styles for carousel */
+
+.swiper {
+width: 100%;
+padding-top: 80px;
+padding-bottom: 80px;
+height: 50vh;
+margin-bottom: 60px;
+margin-top: 50px;
+}
+
+.swiper-slide {
+border-radius: 24px;
+
+background-color: black;
+color: white;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+font-size: 4rem;
+
+transition: transform 0.4s ease;
+}
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+}
+
+.swiper-wrapper {
+transition-timing-function: linear !important;
+}
+
+/* Responsive Design for smaller screens */
+
+@media (max-width: 768px) {
+    nav a {
+        font-size: 0.5rem;
+        text-wrap: nowrap;
+        padding: 5px;
+    }
+    nav .navlogo {
+        width: 30px;
+        height: 30px;
+        
+    }
+
+
+}           
