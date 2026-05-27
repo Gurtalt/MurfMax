@@ -1,108 +1,179 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap%22 rel="
-        stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>New Haven Heritage</title>
-    <link rel="stylesheet" href="StyleSheets/styles.css"> <!--Linking Stylesheet-->
+    <!-- Google Font -->
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" 
+        rel="stylesheet"
+    >
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="StyleSheets/styles.css">
+
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="JavaScript/slider.js" defer></script>
+    
+    <script src="JavaScript/openContent.js" defer></script>
 </head>
 
 <body>
 
+    <!-- Nav Bar  Including the logo-->
     <nav class="nav">
-        <a class="navtext" href="index.html">Home</a>
+        <a class="navtext" href="links.html">Links</a>
         <a class="navtext" href="events.html">Current Events</a>
         <a class="navtext" href="about.html">About Us</a>
+
         <a class="navimg" href="index.html">
-            <img class="navlogo" src="Media/logo.png">
+            <img class="navlogo" src="Media/logo.png" alt="Newhaven Heritage Logo">
         </a>
+
         <a class="navtext" href="contacthaven.html">Contact Us</a>
         <a class="navtext" href="groups.html">Local Groups</a>
         <a class="navtext" href="ourvision.html">Our Vision</a>
     </nav>
 
-    <img class="nhlogo" src="Media/logo.png" alt="NHlogo">
+    <!-- Main logo displayed alongside the page header -->
+    <img class="nhlogo" src="Media/logo.png" alt="NH Logo">
 
+    <!-- Header for newhaven web-->
     <div class="header">
         <h1>NEWHAVEN HERITAGE</h1>
         <h2>HOME SITE FOR ALL NEWHAVEN RELATED TOPICS</h2>
     </div>
 
+    <!-- Hero Section to create the angles and pageheader -->
     <div class="hero">
-        <img class="homeimg" src="Media/niceview.webp" alt="HomepageIMG">
+        <img class="homeimg" src="Media/niceview.webp" alt="Homepage Image">
         <div class="angle2"></div>
         <div class="angle"></div>
-        <div class="pageheader">NEWHAVEN HERITAGE</div>
+            <div class="pageheader_angles">NEWHAVEN HERITAGE</div>
     </div>
 
+    <!-- Divider to add the white line at the start of each page -->
+   <hr>
 
 
+    <!-- Swiper using Js and swiper -->
 
-    <div class="text_img">
-        <div class="indeximg">
-            <img class="indeximg" src="Media/city.jpg" alt="IndexIMG">
+    <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="groups.html"><img src="Media/dayout.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="events.html"><img src="Media/soldiers.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="links.html"><img src="Media/family.webp" alt=""></a></div>
+                <div class="swiper-slide"><a href="ourvision.html"><img src="Media/gentlemen.jpg" alt=""></a></div>
+            </div>
         </div>
-        <div class="indeximg2">
-            <p class="img2_text">Newhaven’s heritage reflects a rich history shaped by generations of resilience,
-                maritime tradition, and community pride. We aim to honour these stories, protect the area’s character,
-                and inspire future connections that celebrate the unique identity at the heart of Newhaven on Forth.</p>
-            <img class="indeximg2" src="Media/fort.webp" alt="indexiimg">
-        </div>
-    </div>
 
-    <div class="info">
-        <div>
-            <img class="info_img" src="Media/association.webp">
-            <h1 class="info_header">NEWHAVEN GROUPS</h1>
-            <p class="info_text">Our Newhaven facebook groups create a supportive space where residents share updates,
-                build
-                connections, exchange ideas, celebrate community spirit, and also stay engaged together for a better
-                community.
+    
+    <hr>
+    <!-- Main page sectiion with two images and text -->
+    <div class="main-section">
+
+        <div> 
+            <img src="Media/city.jpg" alt="Newhaven City View">
+
+            <p>
+                Newhaven’s heritage reflects a rich history shaped by generations of resilience,
+                maritime tradition, and community pride. We aim to honour these stories, protect
+                the area’s character, and inspire future connections that celebrate the unique
+                identity at the heart of Newhaven on Forth.
             </p>
-            <a href="groups.html">
-                <button class="button">LEARN MORE</button>
-            </a>
+     
         </div>
-        <div>
-            <img class="info_img" src="Media/dayout.jpg">
-            <h1 class="info_header1">OUR VISION</h1>
-            <p class="info_text">Our vision for Newhaven on Forth is to strengthen community spirit, preserve local
+
+        <div> 
+            <p>
+                Newhaven’s heritage reflects a rich history shaped by generations of resilience,
+                maritime tradition, and community pride. We aim to honour these stories, protect
+                the area’s character, and inspire future connections that celebrate the unique
+                identity at the heart of Newhaven on Forth.
+            </p>
+
+            <img src="Media/fort.webp" alt="Newhaven Fort">
+        </div>
+
+    </div>
+
+    <hr>
+    <!-- Info card displayed at the end of each page, linked to a pop up with more information-->
+    <div class="info">
+
+        <div class="info-card">
+
+            <h1>NEWHAVEN GROUPS</h1>
+            <img src="Media/gallery.jpg" alt="Community Groups">
+
+            <p>
+                Our Newhaven Facebook groups create a supportive space where residents share updates,
+                build connections, exchange ideas, celebrate community spirit, and stay engaged together
+                for a better community.
+            </p>
+
+            <button onclick="OpenContent('Our Newhaven Facebook groups create a supportive space where residents share updates, build connections, exchange ideas, celebrate community spirit, and stay engaged together for a better community.Our Newhaven Facebook groups create a supportive space where residents share updates, build connections, exchange ideas, celebrate community spirit, and stay engaged together for a better community.Our Newhaven Facebook groups create a supportive space where residents share updates, build connections, exchange ideas, celebrate community spirit, and stay engaged together for a better community.',event,this)">READ MORE!</button>
+
+        </div>
+
+        <div class="info-card">
+
+            <h1>OUR VISION</h1>
+            <img src="Media/vroomvroom.webp" alt="Our Vision">
+
+            <p>
+                Our vision for Newhaven on Forth is to strengthen community spirit, preserve local
                 heritage, inspire participation, and create meaningful opportunities that support everyone.
             </p>
-            <a href="ourvision.html">
-                <button class="button">LEARN MORE</button>
-            </a>
+
+            <button onclick="OpenContent('Our Newhaven Facebook groups create a supportive space where residents share updates, build connections, exchange ideas, celebrate community spirit, and stay engaged together for a better community.',event,this)">READ MORE!</button>
+
         </div>
-        <div>
-            <img class="info_img" src="Media/familyheritage.jpg">
-            <h1 class="info_header">NEWHAVEN EVENTS</h1>
-            <p class="info_text">Our events bring Newhaven residents together through shared experiences that celebrate
-                heritage, encourage involvement, support wellbeing, and strengthen the connections that define our
-                community.
+
+        <div class="info-card">
+
+            <h1>NEWHAVEN EVENTS</h1>
+            <img src="Media/marketheritage.jpg" alt="Newhaven Events">
+
+            <p>
+                Our events bring Newhaven residents together through shared experiences that celebrate
+                heritage, encourage involvement, support wellbeing, and strengthen the connections that
+                define our community.
             </p>
-            <a href="events.html">
-                <button class="button">LEARN MORE</button>
-            </a>
+
+            <button onclick="OpenContent('Our Newhaven Facebook groups create a supportive space where residents share updates, build connections, exchange ideas, celebrate community spirit, and stay engaged together for a better community.',event,this)">READ MORE!</button>
+
         </div>
+        <div id="contentContainer">
+                <p id="contentToChange">helloooooo</p>
+        </div>
+
     </div>
 
-
-
+    <!-- Footer displayed at the end of each page-->
     <footer class="footer">
         <p>NEWHAVEN HERITAGE 2026</p>
+
         <div class="social-icons">
             <a class="footerimg" href="https://www.youtube.com" target="_blank">
                 <img src="Media/youtube.png" alt="YouTube">
             </a>
+
             <a class="footerimg" href="https://www.facebook.com" target="_blank">
                 <img src="Media/facebook.png" alt="Facebook">
             </a>
-            <a class="footerimg" href="https://www.instagram.com" target="_blank">
 
-                <img src="Media/instagram.png" alt="Instagram"> </a>
+            <a class="footerimg" href="https://www.instagram.com" target="_blank">
+                <img src="Media/instagram.png" alt="Instagram">
+            </a>
         </div>
     </footer>
+
 </body>
 
 </html>

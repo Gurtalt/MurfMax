@@ -1,7 +1,9 @@
 <html>
 
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap%22 rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap%22 rel="
+        stylesheet">
     <title>New Haven Heritage</title>
     <link rel="stylesheet" href="StyleSheets/styles.css"> <!--Linking Stylesheet-->
 </head>
@@ -9,8 +11,7 @@
 <body>
 
     <nav class="nav">
-
-        <a class="navtext" href="index.html">Home</a>
+        <a class="navtext" href="links.html">Links</a>
         <a class="navtext" href="events.html">Current Events</a>
         <a class="navtext" href="about.html">About Us</a>
         <a class="navimg" href="index.html">
@@ -19,7 +20,6 @@
         <a class="navtext" href="contacthaven.html">Contact Us</a>
         <a class="navtext" href="groups.html">Local Groups</a>
         <a class="navtext" href="ourvision.html">Our Vision</a>
-
     </nav>
 
     <img class="nhlogo" src="Media/logo.png" alt="NHlogo">
@@ -33,92 +33,161 @@
     <img class="homeimg" src="Media/niceview.webp" alt="HomepageIMG">
     <div class="angle2"></div>
     <div class="angle"></div>
-    <div class="pageheader_contact">CONTACT US</div>
+    <div class="pageheader_angles">CONTACT US</div>
 </div>
 
+ <hr>
+
+<section class="contact-section">
+    <div class="contact-container">
+ 
+        <div class="contact-form-side">
+            <form id="contactForm">
+ 
+                <div class="form-group">
+                    <label for="name">NAME:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+ 
+                <div class="form-group">
+                    <label for="email">EMAIL:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+ 
+                <div class="form-group">
+                    <label for="phone">PHONE (OPTIONAL):</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+ 
+                <div class="form-group">
+                    <label for="message">TOPIC:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+ 
+                <button type="submit">SUBMIT</button>
+ 
+                <p id="formMessage"></p>
+ 
+            </form>
+        </div>
+ 
+        <div class="contact-info-side">
+ 
+            <div class="info-block">
+                <h3>PHOTOGRAPHS OR MUSEUM MATTERS</h3>
+                <p>archivist@newhavenonforth.org.uk</p>
+            </div>
+ 
+            <div class="info-block">
+                <h3>THE BOW-TOW NEWSLETTER EDITOR</h3>
+                <p>newhavenheritage@gmail.com</p>
+            </div>
+ 
+            <div class="info-block">
+                <h3>NEWHAVEN HERITAGE GARDEN GROUP</h3>
+                <p>greenfingers@newhavenonforth.org.uk</p>
+            </div>
+ 
+            <div class="info-block">
+                <h3>NEWHAVEN PAGEANT 2021</h3>
+                <p>events@newhavenonforth.org.uk</p>
+            </div>
+ 
+            <div class="info-block">
+                <h3>SOCIAL MEDIA EDITOR</h3>
+                <p>socialmedia@newhavenonforth.org.uk</p>
+            </div>
+ 
+            <div class="info-block">
+                <h3>BOARD OF TRUSTEES</h3>
+                <p>clerk@newhavenonforth.org.uk</p>
+            </div>
+ 
+        </div>
+ 
+    </div>
+ 
+    <div class="office-info">
+        REGISTERED OFFICE: NEWHAVEN HERITAGE CENTRE,
+        8 BIGGAR ROAD, EDINBURGH EH10 7BQ
+    </div>
+</section>
+</body>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   
+    <!-- Info card displayed at the end of each page, linked to a pop up with more information-->
     <div class="info">
-        <div>
-            <img class="info_img" src="Media/association.webp">
-            <h1 class="info_header">NEWHAVEN GROUPS</h1>
-            <p class="info_text">Our Newhaven facebook groups create a supportive space where residents share updates, build
-                connections, exchange ideas, celebrate community spirit, and also stay engaged together for a better community.
+
+        <div class="info-card">
+            <img class="info-card-img" src="Media/gallery.jpg" alt="Community Groups">
+
+            <h1 class="info-card-title">NEWHAVEN GROUPS</h1>
+
+            <p class="info-card-text">
+                Our Newhaven Facebook groups create a supportive space where residents share updates,
+                build connections, exchange ideas, celebrate community spirit, and stay engaged together
+                for a better community.
             </p>
-            <a href="groups.html"> 
-            <button class="button">LEARN MORE</button>
+
+            <a href="groups.html">
+                <button class="info-card-button">LEARN MORE</button>
             </a>
         </div>
-        <div>
-            <img class="info_img" src="Media/dayout.jpg">
-            <h1 class="info_header1">OUR VISION</h1>
-            <p class="info_text">Our vision for Newhaven on Forth is to strengthen community spirit, preserve local
+
+        <div class="info-card">
+            <img class="info-card-img" src="Media/vroomvroom.webp" alt="Our Vision">
+
+            <h1 class="info-card-title">OUR VISION</h1>
+
+            <p class="info-card-text">
+                Our vision for Newhaven on Forth is to strengthen community spirit, preserve local
                 heritage, inspire participation, and create meaningful opportunities that support everyone.
             </p>
+
             <a href="ourvision.html">
-            <button class="button">LEARN MORE</button>
+                <button class="info-card-button">LEARN MORE</button>
             </a>
         </div>
-        <div>
-            <img class="info_img" src="Media/familyheritage.jpg">
-            <h1 class="info_header">NEWHAVEN EVENTS</h1>
-            <p class="info_text">Our events bring Newhaven residents together through shared experiences that celebrate
-                heritage, encourage involvement, support wellbeing, and strengthen the connections that define our
-                community.
+
+        <div class="info-card">
+            <img class="info-card-img" src="Media/marketheritage.jpg" alt="Newhaven Events">
+
+            <h1 class="info-card-title">NEWHAVEN EVENTS</h1>
+
+            <p class="info-card-text">
+                Our events bring Newhaven residents together through shared experiences that celebrate
+                heritage, encourage involvement, support wellbeing, and strengthen the connections that
+                define our community.
             </p>
+
             <a href="events.html">
-            <button class="button">LEARN MORE</button>
+                <button class="info-card-button">LEARN MORE</button>
             </a>
         </div>
+
     </div>
 
-
-
+    <!-- Footer displayed at the end of each page-->
     <footer class="footer">
         <p>NEWHAVEN HERITAGE 2026</p>
+
         <div class="social-icons">
             <a class="footerimg" href="https://www.youtube.com" target="_blank">
                 <img src="Media/youtube.png" alt="YouTube">
             </a>
+
             <a class="footerimg" href="https://www.facebook.com" target="_blank">
                 <img src="Media/facebook.png" alt="Facebook">
             </a>
-            <a class="footerimg" href="https://www.instagram.com" target="_blank">
 
-                <img src="Media/instagram.png" alt="Instagram"> </a>
+            <a class="footerimg" href="https://www.instagram.com" target="_blank">
+                <img src="Media/instagram.png" alt="Instagram">
+            </a>
         </div>
     </footer>
+
 </body>
 
 </html>
